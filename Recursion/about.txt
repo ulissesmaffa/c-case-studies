@@ -1,0 +1,7 @@
+* Função recursiva é uma função que se refere a si própria. 
+A ideia consiste em utilizar a própria função que estamos a definir na sua definição.
+
+Em todas as funções recursivas existe:
+
+1) Um passo básico (ou mais) cujo resultado é imediatamente conhecido => condição de parada.
+2) Um passo recursivo em que se tenra resolver um sub-problema do problema inicial.
