@@ -1,0 +1,242 @@
+Questionário:
+
+*Faça um paralelo sobre o conceito de ponteiros e os vetores (estáticos)*
+
+    Ponteiro é um tipo de variável que armazena endereço de memória. Vetor é uma estrutura de dados responsável por armazenar
+    um conjunto fixo de elementos. Ponteiros e vetores são usados para manipular dados na memória.
+    Todos os elementos de um vetor são préviamente reservados na memória, um elemento é sequencia do outro. Se criar um ponteiro
+    que recebe a variável vetor: 
+        int vetor[5] = {11, 22, 33, 444, 55}; 
+        int *p = vetor;
+    o ponteiro está recebendo o endereço do primeiro elemento. Sabendo que um vetor é um conjunto fixo de elementos, com o ponteiro p 
+    é possível percorrer toda a extensão do vetor, pois os endereços são uma sequencia.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+*Explique por que os ponteiros ajudam o desenvolvimento de aplicações que otimizam o espaço da memória*
+
+    A utilização de ponteiros, permitem alocação dinâmica de memória, isso significa que é possível alocar mas também
+    libeirar memória após uso. Passagem de parametros como argumento de funções, isso útil para trabalhar com grandes blocos de dados,
+    pois evita cópias desnecessárias. Criação de estrturua de dados complexos, bem como árvores, listas e pilhas. 
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+*Qual a relação entre os ponteiros e uma String? Explique e dê exemplos.*
+
+    Uma string é um vetor de caracteres que terminado pelo caracter "\0" conhecido como caracter nulo. Essa é a grande diferença
+    entre uma string e um vetor. O primeiro elemento de uma string é um ponteiro que armazena seu endereço. 
+    Segue o exemplo que a func printf retorna o mesmo resultado, tanto se enviar a STR quanto se enviar um ponteiro que recebeu STR
+
+        #include <stdio.h>
+        #include <string.h>
+
+        int main(){
+            char str[5]="abcd";
+            char *ptr=str;
+
+            printf("str: %s\n",str);//out: abcd
+            printf("ptr: %s\n",ptr);//out: abcd
+
+            return 0;
+        }
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+“Um vetor é essencialmente um ponteiro” – Você concorda com essa afirmação? explique
+
+    Um vetor é um ponteiro constante que aponta para o endereço de memória do primeiro elemento do vetor. Um vetor é 
+    um conjunto fixo de elementos, que não podem ser mudados durante o decorrer do programa, uma vez alocados não podem ser mais alterados
+    diferente de ponteiros, que podem ser alocados e desacolados liberando espaço na memória. 
+    Apesar do vetor assumir a identidade de um ponteiro ao apontar um endereço de memória, ele não assume a possibildiade de alocar
+    mais elementos ou desalocar por exemplo. essa afirmação é parcialmente verdade
+
+        #include <stdio.h>
+        #include <string.h>
+
+        int main(){
+            int vetor[5] = {11, 22, 33, 444, 55};
+            int *p = vetor;  // ponteiro aponta para o primeiro elemento do vetor   
+
+            printf("v[2]: %i\n",*(p+1));//out: 22
+
+            return 0;
+        }
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Imagine que você definiu um vetor chamado “vetor” e seus elementos são inteiros e cada um ocupa 8 bytes da sua memória. 
+Se o endereço de vetor[0] é 85800, qual o valor da expressão vetor + 6?  
+
+        #include <stdio.h>
+        #include <string.h>
+
+        int main(){
+            int vetor[9] = {11, 22, 33, 44, 55, 66, 77, 88, 99};
+            int *p = vetor;  // ponteiro aponta para o primeiro elemento do vetor   
+
+            printf("v[1]: %i\n",*(p));
+            printf("&v[1]: %p\n",p);
+
+            printf("v[2]: %i\n",*(p+1));
+            printf("&v[2]: %p\n",p+1);
+
+            printf("v[6]: %i\n",*(p+5));
+            printf("&v[6]: %p\n",p+5);
+
+            return 0;
+        }
+
+        OUT:
+        v[1]: 11
+        &v[1]: 0x16b4932b4 -> b4 -> 180
+
+        v[2]: 22
+        &v[2]: 0x16b4932b8 -> b8 -> 184
+
+        v[6]: 66
+        &v[6]: 0x16b4932c8 -> c8 -> 200
+
+    v[1] = 180
+    v[2] = 184
+    v[3] = 188
+    v[4] = 192
+    v[5] = 196
+    v[6] = 200
+
+    Inteiro vai somando de 4 em 4.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Suponha que v é um vetor. Descreva o porquê existe uma diferença entre escrever v[3] e v + 3
+
+    v[3] irá buscar o valor do elemento naquela posição, v+3 é um ponteiro que aponta para o endereço de v[3]
+
+        #include <stdio.h>
+        #include <string.h>
+
+        int main(){
+            int vetor[9] = {11, 22, 33, 44, 55, 66, 77, 88, 99};
+            int *p = vetor;  // ponteiro aponta para o primeiro elemento do vetor   
+
+            printf("v=%i\n",vetor[3]);
+            printf("v+3=%p\n",vetor+3);
+            printf("&v[3]=%p\n",p+3);
+            printf("v[3]: %i\n",*(p+3));
+
+            return 0;
+        }
+
+        Out:
+            v=44
+            v+3  =0x16b4bb2c0
+            &v[3]=0x16b4bb2c0
+            v[3]: 44
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+É possível criar um ponteiro que aponta para um ponteiro? 
+Como explicamos anteriormente um ponteiro é um tipo de dados que aponta para um endereço de memória de uma variável 
+(que possui um tipo), ou seja, quando você cria um int *a; você cria um ponteiro para um inteiro.
+
+    Para criar um ponteiro que aponta para um ponteiro é preciso colocar dois asteriscos na sua declaração.
+    Cada asterisco aumenta o grau de indirection, ou seja, int *p é um ponteiro para int. 
+    int **p é um ponteiro que aponta para um ponteiro para int.
+
+    #include <stdio.h>
+    #include <string.h>
+
+    int main(){
+        int x;
+        int *p;//ponteiro
+        int **pp;//ponteiro do ponteiro
+
+        x=3;
+        printf("x=%i   - end=%p\n",x,&x);
+        p=&x;
+        printf("*p=%i  - end=%p\n",*p,p);
+        pp=&p;
+        printf("end(p)=%p - pp=%p\n",&p,pp);
+        printf("**p=%i\n",**pp);
+
+        return 0;
+    }
+    OUT:
+        x=3   - end=0x16b76f2d8
+        *p=3  - end=0x16b76f2d8
+        end(p)=0x16b76f2d0 - pp=0x16b76f2d0
+        **p=3
+
+    RESUMO:
+        x é uma variável localizada na posição d8 que contém o valor 3
+        p é um ponteiro que aponta para d8 e está no endereço de memória d0
+        pp é um ponteiro que aponta para d0 
+
+        Para imprimir o valor que p está apontando por pp, é necessário usar dois asteriscos.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+No entanto, os ponteiros podem apontar para outros ponteiros. Para isso você deverá colocar dois sinais de asteriscos, seria algo assim:
+int **p
+Agora analise o código abaixo e explique cada uma das linhas usando comentários.
+
+    main (){
+        int x = 100, *p, **pp;//pp é um ponteiro que aponta para outro ponteiro que aponta para um int.
+        p = &x;
+        pp = &p;
+            printf("Valor de pp: %dn", **pp);//o valor de pp será 100. Pois ele está apontando para p que tem o end de x
+    } 
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Vamos criar uma função agora que localiza uma letra em um vetor 
+e retorna um outro vetor com suas posições onde a letra foi encontrada. Por exemplo:
+ 0  1  2  3  4
+[v][a][n][i][a]
+
+// output procurando a letra "a"
+[1][4]     
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void charSearch(char *v, int size, char search,int *qtd){
+    int i;
+    *qtd=0;
+
+    for(i=0;i<size;i++){
+        // printf("%c ",v[i]);
+        if(search==v[i]){
+            *qtd=*qtd+1;
+        }
+    }
+    printf("qtd=%i\n",*qtd);
+
+}
+
+    int main(){
+        char v1[]={'v','a','n','i','a'};
+        int size=sizeof(v1)/sizeof(v1[0]);
+        printf("size v1=%i\n",size);
+        char search = 'a';
+        int qtd;
+        int i;
+
+        charSearch(v1,size,search,&qtd);//função que busca qual vai ser o tamanho do novo vetor
+        
+        int v2[qtd];//com o tamanho do novo vetor, cria-se o novo vetor com tamanho correto.
+        int k=0;
+
+        for(i=0;i<size;i++){
+            if(search==v1[i]){
+                v2[k]=i;
+                k++;
+            }
+        }
+        for(i=0;i<qtd;i++){
+            printf("%i ",v2[i]);
+        }
+        return 0;
+    }
+
+-------------------------------------------------------------------------------------------------------------------------------------
