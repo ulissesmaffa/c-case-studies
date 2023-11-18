@@ -102,7 +102,7 @@ int main(){
         printf("w[%i]=%.3f\n",i,weights[i]);
     }
 
-    float desired_outputs[ROW] = {0, 0, 0, 1};
+    float desired_outputs[ROW] = {0, 1, 1, 0};
 
     do{
         printf("\n============================  MENU ============================\n");
