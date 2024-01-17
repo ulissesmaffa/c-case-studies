@@ -1,11 +1,16 @@
 /*
-Crie um vetor de 20 posições de inteiros.  
-Após o vetor estar todo preenchido com valores informados pelo teclado, 
-solicite ao usuário a informação de um número, o qual será procurado no vetor. 
-Se o valor for encontrado informe em que posição ele se encontra 
-(a primeira, caso ele esteja armazenado em mais de uma posição). 
-Utilize mensagem adequada para o caso do valor não estar armazenado no vetor.
-*/
+ * Pesquisa de Valor em um Vetor de Inteiros
+ * Este programa cria um vetor de 20 posições de inteiros, preenchido com valores inseridos pelo usuário.
+ * Após o preenchimento, o programa solicita um número para pesquisa e identifica se ele está presente no vetor,
+ * informando a primeira posição de sua ocorrência ou indicando se o valor não foi encontrado.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - O vetor é preenchido com valores fornecidos pelo usuário.
+ * - A função printVector exibe o vetor.
+ * - A função searchVector procura pelo valor informado no vetor e exibe a posição da primeira ocorrência ou uma mensagem caso não seja encontrado.
+ */
 
 #include <stdio.h>
 #define SIZE 20

@@ -1,9 +1,10 @@
 /*
-Elabore um programa que leia um número e depois escreva uma função que receba este valor 
-inteiro lido como referência e retorne o resto da divisão deste número por 10. 
-Altere também o valor da variável passada por referência, dividindo-a por 10
-*/
-
+ * Nome do Programa: Programa simples funções
+ * Descrição: 
+ *    Programa simples para lidar com funções
+ * 
+ * Autor: Ulisses Maffazioli
+ */
 #include <stdio.h>
 
 int func(int *n){

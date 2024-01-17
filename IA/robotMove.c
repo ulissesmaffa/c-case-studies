@@ -1,3 +1,12 @@
+/*
+ * Exploração de Labirinto com Busca em Profundidade (DFS)
+ * Cria um labirinto utilizando uma estrutura de dados 'Cell' e explora caminhos através de uma árvore.
+ * A exploração é realizada usando o algoritmo de busca em profundidade (DFS).
+ * O programa identifica caminhos do ponto de partida até a saída do labirinto.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

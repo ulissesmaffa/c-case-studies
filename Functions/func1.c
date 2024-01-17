@@ -1,4 +1,10 @@
-/*insere dois dados e ordena*/
+/*
+ * Nome do Programa: Programa simples funções
+ * Descrição: 
+ *    Programa simples para lidar com funções
+ * 
+ * Autor: Ulisses Maffazioli
+ */
 
 #include <stdio.h>
 

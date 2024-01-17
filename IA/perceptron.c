@@ -1,7 +1,10 @@
-/*Implemente um perceptron. O teste deve ser feito com uma função linearmente separável (ex: função AND; OR).
-Com o perceptron desenvolvido, implemente uma rede de perceptrons multicamada. 
-O teste deve ser feito com uma função que não seja linearmente separável (ex: função XOR; função coincidência).*/
-
+/*
+ * Implementação de Perceptron e Rede Multicamada
+ * Desenvolve um perceptron para funções linearmente separáveis e uma rede de perceptrons multicamada
+ * para funções não linearmente separáveis. Inclui treinamento e teste com funções AND, OR, XOR.
+ *
+ * Autor: Ulisses Maffazioli
+ */
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h> 

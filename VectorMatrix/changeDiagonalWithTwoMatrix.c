@@ -1,6 +1,16 @@
 /*
-Leia duas matrizes 10 x 10 e faça uma substituição entre a diagonal principal da primeira e secundária da segunda.
-*/
+ * Substituição entre Diagonais de Duas Matrizes 10x10
+ * Este programa lê duas matrizes 10x10, troca a diagonal principal da primeira matriz com a diagonal secundária da segunda e exibe as matrizes modificadas.
+ * As matrizes são preenchidas com valores aleatórios e, após a substituição das diagonais, as matrizes modificadas são apresentadas.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - Utiliza a função randomMatrix da biblioteca 'ulissesMatrix.h' para preencher as matrizes com valores aleatórios.
+ * - A função changeDiagonal2(int row, int col, int m1[row][col], int m2[row][col]) realiza a troca das diagonais entre as duas matrizes.
+ * - A diagonal principal da primeira matriz e a diagonal secundária da segunda matriz são copiadas e substituídas entre si.
+ */
+
 
 #include <stdio.h>
 #include <stdlib.h>

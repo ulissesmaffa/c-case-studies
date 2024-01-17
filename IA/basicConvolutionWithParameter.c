@@ -1,3 +1,11 @@
+/*
+ * Programa de Convolução e Pooling em Matrizes
+ * Executa operações de convolução 2D e 3D e max pooling em matrizes.
+ * Ideal para simulação de etapas em redes neurais convolucionais.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h> 

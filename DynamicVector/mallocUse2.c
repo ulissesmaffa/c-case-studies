@@ -1,12 +1,23 @@
 /*
-Escreva um programa que declare uma matriz nxn de inteiros 
-(lendo as dimensões do teclado e alocando a menor quantidade de memória possível 
-para armazenar os valores da matriz). Você deve inicializar a matriz com zeros usando 
-ponteiros para endereçar seus elementos. Preencha depois a matriz com os números de 1 a 10000, 
-também usando ponteiros.
-
-https://www.youtube.com/watch?v=YNVKlEL2hpo&t=1343s
-*/
+ * Nome do Programa: Preenchimento e Manipulação de Matriz
+ * Descrição: 
+ *    Este programa cria uma matriz nxn de inteiros, com suas dimensões lidas do teclado.
+ *    A matriz é inicialmente preenchida com zeros e, posteriormente, preenchida com números
+ *    de 1 a 10000, utilizando alocação dinâmica de memória e aritmética de ponteiros para 
+ *    manipulação da matriz. As funções incluem a criação, inicialização, preenchimento e
+ *    impressão da matriz.
+ * 
+ * Autor: Ulisses Maffazioli
+ * 
+ * Notas:
+ *    - O programa demonstra o uso de ponteiros duplos para manipulação de matrizes em C.
+ *    - As funções principais incluem:
+ *        - printMatrix: Imprime a matriz.
+ *        - insertMatrix: Inicializa a matriz com zeros.
+ *        - fillMatrix: Preenche a matriz com números de 1 a 10000.
+ *    - A memória alocada para a matriz é liberada antes do término do programa.
+ *    - Ref: https://www.youtube.com/watch?v=YNVKlEL2hpo&t=1343s
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

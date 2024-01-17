@@ -1,7 +1,15 @@
 /*
-Crie uma matriz  5 x 5 de inteiros e posteriormente (após o preenchimentos dos elementos via teclado), 
-escreva a localização (linha e a coluna) do maior valor.
-*/
+ * Identificação do Maior Valor em uma Matriz 5x5
+ * Este programa cria uma matriz 5x5 de inteiros, preenchida manualmente, 
+ * e identifica a localização (linha e coluna) do maior valor na matriz.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A matriz é preenchida com valores definidos previamente no código.
+ * - Um loop duplo for é utilizado para percorrer a matriz e identificar o maior valor e sua localização.
+ * - A localização do maior valor na matriz é exibida ao final.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

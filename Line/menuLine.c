@@ -1,3 +1,12 @@
+/*
+ * Gerenciamento de Lista Encadeada
+ * Este programa permite criar e gerenciar uma lista encadeada com opções para inserção no início, fim, e meio da lista,
+ * exibição dos elementos da lista, e exclusão de elementos. 
+ * Inclui um menu interativo para realizar essas operações.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>

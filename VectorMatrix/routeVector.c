@@ -1,10 +1,15 @@
 /*
-Considere um vetor de trajetórias de 9 elementos, onde cada elemento possui o valor do próximo elemento do vetor a ser lido. 
-    Índice  1    2    3    4    5    6    7     8     9  
-	Valor   5    7    6    9    2    8    4     0     3 
-Assim, a seqüência da leitura seria 1, 5, 2, 7, 4, 9, 3, 6, 8, 0
-Faça um algoritmo que seja capaz de ler esse vetor e seguir a trajetória.
-*/
+ * Leitura de Vetor de Trajetórias
+ * Este programa lê um vetor de 9 elementos, onde cada elemento especifica o índice do próximo elemento a ser lido na sequência.
+ * A função routeVector segue a trajetória definida pelos valores do vetor e exibe a sequência resultante.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - O vetor de trajetórias é inicializado com valores pré-definidos, representando os índices a serem seguidos.
+ * - A função printVector exibe o vetor original.
+ * - A função routeVector determina e exibe a sequência de leitura com base na trajetória definida pelo vetor.
+ */
 
 #include <stdio.h>
 #define SIZE 10

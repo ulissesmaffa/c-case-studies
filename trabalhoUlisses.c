@@ -14,6 +14,8 @@ A estrutura de dados servirá para armazenar o cadastro dos clientes de uma loja
 
 USAR ARQUIVO PARA ARMAZENAR OS DADOS.
 
+Autor: Ulisses Maffazioli
+
 Menu:
 1 - Cadastrar cliente
 2 - Listar cliente que fez a última compra em uma data informada pelo teclado (informar CPF, nome e endereço)

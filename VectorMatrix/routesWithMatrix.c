@@ -1,6 +1,15 @@
 /*
-Questão 16 da lista
-*/
+ * Cálculo de Distância Total com Base em Matriz de Distâncias
+ * Este programa calcula a distância total percorrida com base em uma matriz de distâncias entre pontos e um vetor de deslocamento.
+ * A matriz de distâncias é preenchida manualmente, e o vetor de deslocamento é definido no código.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A matriz de distâncias é inicializada na função createMatrix e preenchida com valores pré-definidos.
+ * - A função calcDistance calcula a distância total percorrida conforme o vetor de deslocamento.
+ * - O vetor de deslocamento e a matriz de distâncias são impressos, seguidos pelo cálculo da distância total.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

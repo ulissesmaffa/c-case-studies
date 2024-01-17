@@ -1,50 +1,35 @@
-/*função recursiva mdc(x,y) que recebe dois valores inteiros e que devolve o maior divisor comum aos dois valores recebidos*/
+/*
+ * Implementação da Função de Máximo Divisor Comum (MDC) - Método Recursivo
+ * Este programa calcula o maior divisor comum (MDC) de dois números inteiros usando o algoritmo de Euclides de forma recursiva.
+ * O usuário é solicitado a inserir dois números, e o programa retorna o MDC desses números.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função mdc(int x, int y) implementa o algoritmo de Euclides para o cálculo do MDC.
+ *   Se o segundo número (y) é zero, a função retorna o primeiro número (x) como MDC.
+ *   Caso contrário, a função chama a si mesma com os argumentos y e o resto da divisão de x por y.
+ * - Esta abordagem recursiva simplifica a implementação do algoritmo e é eficiente para calcular o MDC.
+ */
 
 #include <stdio.h>
 
+// Função recursiva para calcular o MDC
 int mdc(int x, int y){
-    return 1;
+    if (y == 0) {
+        return x;
+    } else {
+        return mdc(y, x % y);
+    }
 }
 
 int main(){
-    int x,y,z;
-    x=2;
-    y=4;
+    int x, y, z;
+    printf("Digite dois números para calcular o MDC: \n");
+    scanf("%i %i", &x, &y);
 
-    z=mdc(x,y);
-    printf("z=%i\n",z);
+    z = mdc(x, y);
+    printf("O MDC de %i e %i é %i\n", x, y, z);
 
     return 0;
 }
-/*
-2 4 | 2
-1 2 | 2
-1 1 |
--------
-2*2=4
-
-1) n=2
-do{
-    z=x%n
-    if(z==0){
-        v=x/n
-    }
-}while(x+y==2)
-
-
-3 5 | 3
-1 5 | 5
-1 5
--------
-3*5=15
-
-16 10 | 2
-8  5  | 2
-4  5  | 2
-2  5  | 2
-1  5  | 5
-1  5  |
---------
-2*2*2*2*5=80
- 
-*/

@@ -1,8 +1,10 @@
-/* 
-Elabore um programa que cria um vetor de 5 posições de inteiros
-utilizando uma função altere os valores do vetor lido com o valor de cada elemento do vetor pela multiplicação
-dele pelo número lido
-*/
+/*
+ * Nome do Programa: Programa simples funções
+ * Descrição: 
+ *    Programa simples para lidar com funções
+ * 
+ * Autor: Ulisses Maffazioli
+ */
 
 #include <stdio.h>
 

@@ -1,10 +1,19 @@
 /*
-Faça um programa que pergunte ao usuário quantos valores ele deseja armazenar em um vetor de doubles, 
-depois use a função MALLOC para reservar (alocar) o espaço de memória de acordo com o especificado pelo usuário. 
-Use este vetor dinâmico como um vetor comum, atribuindo aos 10 primeiros elementos do vetor valores aleatórios (rand) 
-entre 0 e 100. Exiba na tela os valores armazenados nos 10 primeiros elementos do vetor 
-(O vetor deve ter pelo menos um tamanho igual a 10 doubles, ou mais). 
-*/
+ * Nome do Programa: Manipulação de Vetores
+ * Descrição: 
+ *    Este programa demonstra a inserção e impressão de elementos em um vetor dinâmico em C. 
+ *    O usuário insere o tamanho do vetor, e o programa preenche o vetor com números aleatórios
+ *    e, em seguida, imprime os valores armazenados e o tamanho do vetor.
+ * 
+ * Autor: Ulisses Maffazioli
+ * 
+ * Notas:
+ *    - Este programa foi desenvolvido como parte de um projeto acadêmico.
+ *    - O programa utiliza alocação dinâmica de memória para o vetor.
+ *    - Funções utilizadas: 
+ *        - insertVector: Insere valores aleatórios no vetor.
+ *        - printVector: Imprime os valores do vetor e seu tamanho.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

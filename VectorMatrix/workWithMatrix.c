@@ -1,3 +1,9 @@
+/*
+ * Manipulação de matrizes
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

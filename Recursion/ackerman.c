@@ -1,9 +1,20 @@
 /*
-Desenvolva algoritmos recursivos para os seguinte problema:
-a(m,n) = n+1, se m==0
-a(m,n) = a(m-1,1), se m!=0 && n==0
-a(m,n) = a(m-1,a(m,n-1)), se m!=0 && n!=0
-*/
+ * Implementação da Função de Ackermann
+ * Este programa calcula a função de Ackermann, uma função matemática recursiva que é um exemplo notável
+ * de uma função que é recursiva mas não é primitivamente recursiva.
+ * Os usuários podem inserir valores para 'm' e 'n', e o programa calculará a(m, n) usando a definição clássica da função de Ackermann.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * A função de Ackermann é definida recursivamente como segue:
+ * - a(m, n) = n + 1, se m == 0
+ * - a(m, n) = a(m - 1, 1), se m != 0 && n == 0
+ * - a(m, n) = a(m - 1, a(m, n - 1)), se m != 0 && n != 0
+ * Esta implementação segue diretamente a definição, usando chamadas recursivas para calcular os valores.
+ * Devido à natureza da função, para grandes valores de 'm' e 'n', o programa pode consumir muitos recursos ou levar muito tempo para ser concluído.
+ */
+
 #include <stdio.h>
 
 int ackermann(int m, int n) {

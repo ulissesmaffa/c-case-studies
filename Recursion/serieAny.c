@@ -1,3 +1,16 @@
+/*
+ * Cálculo de Série Matemática Usando Recursão
+ * Este programa calcula o valor de uma série matemática definida pela soma dos inversos dos fatoriais de 1 até n.
+ * O usuário fornece um valor inteiro positivo para n, e o programa retorna o valor da série.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função fatorial(int n) retorna o fatorial de n.
+ * - A função serieAny(int n) calcula a soma dos inversos dos fatoriais de 1 até n de forma recursiva.
+ * - O programa utiliza um loop para garantir que o usuário forneça um número maior que zero.
+ */
+
 #include <stdio.h>
 
 int fatorial(int n){

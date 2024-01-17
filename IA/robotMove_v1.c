@@ -1,3 +1,11 @@
+/*
+ * Programa de Labirinto com Estrutura de Dados 'Cell'
+ * Cria e gerencia um labirinto usando uma matriz e uma estrutura de dados customizada 'Cell'.
+ * Permite a navegação e determinação de caminhos dentro do labirinto baseado na conectividade das células.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

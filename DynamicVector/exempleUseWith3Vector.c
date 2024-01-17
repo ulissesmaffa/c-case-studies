@@ -1,3 +1,24 @@
+/*
+ * Nome do Programa: Gerenciamento de Informações de Produtos
+ * Descrição: 
+ *    Este programa gerencia informações de produtos como estoque, valor de compra e 
+ *    valor de venda. Ele permite ao usuário inserir dados para uma quantidade específica
+ *    de produtos e, em seguida, exibe essas informações. O programa utiliza alocação 
+ *    dinâmica de memória para armazenar os dados dos produtos.
+ * 
+ * Autor: Ulisses Maffazioli
+ * 
+ * Notas:
+ *    - O programa solicita ao usuário a quantidade de produtos para cadastro.
+ *    - As informações de cada produto incluem estoque, valor de compra e valor de venda.
+ *    - As funções principais incluem:
+ *        - inserirInfo: Captura e valida as informações de cada produto.
+ *        - imprimirInfo: Exibe as informações de todos os produtos cadastrados.
+ *    - O programa demonstra o uso de alocação dinâmica de memória sem type casting.
+ *    - A memória alocada é liberada antes do término do programa para evitar vazamentos de memória.
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

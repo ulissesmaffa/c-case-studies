@@ -1,7 +1,16 @@
 /*
-6) Faça uma função recursiva, em linguagem C, que calcule o valor da série S descrita a
-seguir para um valor n>0 a ser fornecido como parâmetro para a mesma. 
-*/
+ * Cálculo de Série Matemática Usando Recursão
+ * Este programa calcula o valor de uma série matemática definida pela relação S(n) = (1 + n²)/n + S(n-1), 
+ * com S(1) = 2, para um valor positivo de n fornecido pelo usuário.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função serieS(float n) é recursiva e calcula o valor da série para um dado n.
+ * - A condição de parada da recursão é quando n é igual a 1.
+ * - A função main() solicita ao usuário um valor positivo para n e exibe o resultado calculado.
+ */
+
 #include <stdio.h>
 #include <math.h>
 

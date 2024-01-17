@@ -1,7 +1,14 @@
 /*
-5) Escreva uma função recursiva, SomaSerie(i,j,k: inteiro): inteiro, que devolva a soma
-da série de valores do intervalo [i,j], com incremento k. 
-*/
+ * Cálculo da Soma de uma Série Numérica Usando Função Recursiva
+ * Este programa calcula a soma de uma série de números no intervalo [i, j] com um incremento de k usando uma função recursiva.
+ * O usuário fornece os valores de i, j e k, e a função recursiva SomaSerie(i, j, k) retorna a soma dos números correspondentes.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função serieSum(int i, int j, int k) é recursiva e calcula a soma dos valores de i até j, incrementando i por k a cada chamada.
+ * - A função main() assegura que o usuário forneça valores válidos para i, j e k, com i menor que j e k adequado para o intervalo.
+ */
 
 #include <stdio.h>
 #include <math.h>

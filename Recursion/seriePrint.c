@@ -1,7 +1,14 @@
 /*
-4) Escreva uma função recursiva, ImprimeSerie(i,j,k: inteiro), que imprime na tela a
-série de valores do intervalo [i,j], com incremento k. 
-*/
+ * Impressão de Série Numérica com Função Recursiva
+ * Este programa imprime uma série de números no intervalo [i, j] com um incremento de k, usando uma função recursiva.
+ * O usuário fornece os valores de i, j e k, e a função recursiva ImprimeSerie(i, j, k) imprime os números correspondentes.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função seriePrint(int i, int j, int k) é recursiva e imprime os valores de i até j, incrementando por k a cada chamada.
+ * - A função main() garante que o usuário forneça valores válidos para i, j e k, com i menor que j e k adequado para o intervalo.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

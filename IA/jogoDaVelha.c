@@ -1,13 +1,11 @@
 /*
-Faça um programa para gerar todas as possibilidades para uma partida de jogo da velha.
-Escolha uma estrutura de dados para armazenar estas possibilidades.
-Represente cada tabuleiro que está armazenado em uma posição da estrutura como um vetor de 9 posições, 
-onde são representadas as linhas do tabuleiro conforme a figura {1,2,3,4,5,6,7,8,9}.
-Em cada posição pode ter ‘O’, ’X’ ou ‘ ‘ (espaço).
-Na estrutura de dados deve ser possível localizar para um determinado estado do tabuleiro 
-quais são os possíveis próximos estados.
-Deve ser possível acompanhar os movimentos na estrutura indicando-se manualmente a próxima jogada.
-*/
+ * Programa de Geração de Possibilidades do Jogo da Velha
+ * Gera todas as possibilidades para uma partida de jogo da velha, armazenando-as em uma estrutura de dados.
+ * Representa cada estado do tabuleiro como um vetor de 9 posições com 'O', 'X' ou espaço vazio.
+ * Identifica possíveis próximos estados e permite o acompanhamento manual das jogadas.
+ *
+ * Autor: Ulisses Maffazioli
+ */
 
 #include <stdio.h>
 #include <stdbool.h>

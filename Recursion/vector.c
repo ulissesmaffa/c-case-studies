@@ -1,8 +1,15 @@
 /*
-Elabore um programa que armazene valores em um vetor de inteiros com 10 posições 
-e inicie cada elemento com o valor de 1 a 10. Codifique uma função recursiva  que 
-imprima todos os elementos em ordem e uma função recursava que imprima todos os elementos na ordem inversa.
-*/
+ * Impressão de Vetor em Ordem e Ordem Inversa Usando Recursão
+ * Este programa armazena valores de 1 a 10 em um vetor de inteiros e implementa duas funções recursivas:
+ * uma para imprimir os elementos do vetor em ordem e outra para imprimi-los na ordem inversa.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função printVectorInverso(int *v, int size) imprime os elementos do vetor na ordem inversa.
+ * - A função printVectorOrdenado(int *v, int size) imprime os elementos do vetor em ordem.
+ * - Ambas as funções utilizam recursão para percorrer o vetor, ajustando o ponteiro e o tamanho do vetor a cada chamada.
+ */
 
 #include <stdio.h>
 

@@ -1,5 +1,11 @@
-//Tic-tac-toe playing AI. Exhaustive tree-search. WTFPL
-//Matthew Steel 2009, www.www.repsilat.com
+/*
+ * Jogo da Velha com IA - Busca Exaustiva
+ * Programa que implementa um jogo da velha jogável contra uma IA. A IA utiliza o algoritmo minimax para determinar
+ * os melhores movimentos. O jogo permite ao jogador escolher jogar primeiro ou segundo.
+ *
+ * Autor: Ulisses Maffazioli
+ * Ref: Tic-tac-toe playing AI. Exhaustive tree-search. WTFPL - Matthew Steel 2009, www.www.repsilat.com
+ */
 
 #include <stdio.h>
 

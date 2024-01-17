@@ -1,4 +1,24 @@
-/*potencia (x,y) que devolva o x elevado a potencia y*/
+/*
+ * Cálculo de Potência Usando Função Recursiva
+ * Este programa calcula x elevado à potência y utilizando uma função recursiva.
+ * O usuário fornece os valores inteiros para a base x e o expoente y, e o programa retorna x^y.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função potencia(int x, int y) é recursiva. Ela multiplica x por si mesmo y vezes.
+ * - A condição de parada é quando y se torna 0, caso em que a função retorna 1, pois qualquer número elevado a 0 é 1.
+ * - O programa demonstra o conceito de recursão reduzindo o valor de y em 1 a cada chamada recursiva.
+ * - Resumo do Processo Recursivo:
+ *   A função "potencia" chama a si mesma reduzindo gradualmente o valor de "y" até que ele atinja 0,
+ *   momento em que a função retorna 1. Por exemplo, potencia(2,3) faz as seguintes chamadas:
+ *   [1] potencia(2,3) = 2 * potencia(2,2), 
+ *   [2] potencia(2,2) = 2 * potencia(2,1),
+ *   [3] potencia(2,1) = 2 * potencia(2,0),
+ *   [4] potencia(2,0) retorna 1.
+ *   Assim, potencia(2,3) calcula 2 * 2 * 2 * 1 = 8.
+ */
+
 #include <stdio.h>
 
 int potencia(int x, int y){
@@ -23,19 +43,3 @@ int main(){
 
     return 0;
 }
-/*
-A função "potencia" é recursiva, ou seja, ela chama a si mesma dentro de sua própria definição, 
-reduzindo gradualmente o valor de "y" até que ele atinja 0, 
-momento em que a função retorna 1 (pois qualquer número elevado a 0 é igual a 1).
-
-Por exemplo, se o usuário digitar "2" para "x" e "3" para "y", 
-[1] o programa chama a função "potencia(2,3)", 
-[2] que por sua vez chama "potencia(2,2)", "potencia(2,1)",
-[3] "potencia(2,0)", 
-[4] e finalmente retorna 1. 
-
-[1] Então, a função "potencia(2,1)" retorna 2 * potencia(2,0) = 2 * 1 = 2,  ---começa pela condição de parada, resultado é 1, então 2*1=2
-[2] a função "potencia(2,2)" retorna 2 * potencia(2,1) = 2 * 2 = 4, 
-[3] e a função "potencia(2,3)" retorna 2 * potencia(2,2) = 2 * 4 = 8.
-[4] O resultado final é impresso na tela como "z=8".
-*/

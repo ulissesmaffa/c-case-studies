@@ -1,8 +1,10 @@
 /*
-3) Escreva uma função recursiva que faça o seguinte: leia um número; se o número for
-negativo, a função para; caso contrário, a função imprime o número e faz uma
-chamada recursiva a si mesma. 
-*/
+ * Função Recursiva para Impressão de Números Não Negativos
+ * Este programa utiliza uma função recursiva para imprimir números não negativos em ordem decrescente
+ * até atingir um número negativo, onde a recursão é interrompida.
+ * 
+ * Autor: Ulisses Maffazioli
+ */
 
 #include <stdio.h>
 

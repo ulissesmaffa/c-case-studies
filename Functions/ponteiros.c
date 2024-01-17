@@ -1,3 +1,11 @@
+/*
+ * Nome do Programa: Programa simples para lidar com ponteiros
+ * Descrição: 
+ *    Programa simples para lidar com ponteiros
+ * 
+ * Autor: Ulisses Maffazioli
+ */
+
 #include<stdio.h>
 
 int f1(int *n){

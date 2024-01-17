@@ -1,7 +1,8 @@
 /*
-Leia duas matrizes 4 x 4 e escreva uma terceira com os maiores elementos entre as primeiras
-*/
-
+ * Manipulação de matriz 4x4
+ *
+ * Autor: Ulisses Maffazioli
+ */
 #include <stdio.h>
 #include <stdlib.h>
 

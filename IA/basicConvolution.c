@@ -1,3 +1,11 @@
+/*
+ * Programa de Convolução de Matrizes
+ * Realiza a operação de convolução entre uma matriz principal e um kernel, gerando uma nova matriz.
+ * Utiliza matrizes definidas pelo usuário para demonstrar o cálculo de convolução.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h> 

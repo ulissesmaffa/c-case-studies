@@ -1,3 +1,11 @@
+/*
+ * Programa de Jogo da Velha com Estrutura de Dados
+ * Implementa uma estrutura de dados para gerenciar o estado do tabuleiro e os possíveis caminhos no jogo da velha.
+ * Utiliza uma lista encadeada para armazenar os estados do jogo e avalia o resultado de cada jogada.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

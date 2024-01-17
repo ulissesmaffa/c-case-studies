@@ -1,3 +1,26 @@
+/*
+ * Nome do Programa: Manipulação de Arquivos em C
+ * Descrição: 
+ *    Este programa demonstra várias operações de leitura e escrita em arquivos usando C.
+ *    As operações incluem escrever em um arquivo, ler de um arquivo, contar o número de
+ *    linhas em um arquivo, somar números de cada linha do arquivo e imprimir o conteúdo 
+ *    do arquivo na tela. Cada operação é realizada de maneira segura, verificando se o 
+ *    arquivo foi aberto corretamente.
+ * 
+ * Autor: Ulisses Maffazioli
+ * 
+ * Notas:
+ *    - O programa utiliza a biblioteca stdio.h para as operações de arquivo.
+ *    - As operações de arquivo incluem:
+ *        - Escrita de inteiros em um arquivo.
+ *        - Leitura de inteiros de um arquivo.
+ *        - Contagem de linhas em um arquivo.
+ *        - Soma de números presentes em cada linha do arquivo.
+ *        - Impressão do conteúdo do arquivo usando fgetc.
+ *    - O programa trata erros de abertura de arquivo, garantindo a segurança na execução.
+ */
+
+
 #include <stdio.h>
 
 int main(){

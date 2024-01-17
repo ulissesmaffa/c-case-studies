@@ -1,6 +1,17 @@
 /*
-Leia uma matriz 5 x 5 e faça uma troca entre as diagonais principal e secundária. Escreva-a ao final.
-*/
+ * Troca de Diagonais em uma Matriz 5x5
+ * Este programa lê uma matriz 5 x 5, troca os elementos da diagonal principal com os da diagonal secundária e exibe o resultado.
+ * A matriz é preenchida com valores aleatórios e, após a troca das diagonais, a matriz modificada é apresentada.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - Utiliza a função randomMatrix da biblioteca 'ulissesMatrix.h' para preencher a matriz com valores aleatórios.
+ * - A função changeDiagonal(int row, int col, int m[row][col]) realiza a troca das diagonais.
+ * - Primeiro, a diagonal principal é copiada para um vetor.
+ * - Em seguida, a diagonal secundária é copiada para a diagonal principal.
+ * - Por fim, os elementos do vetor são copiados para a diagonal secundária da matriz.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

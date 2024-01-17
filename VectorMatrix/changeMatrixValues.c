@@ -1,7 +1,16 @@
 
 /*
-Leia uma matriz 4 x 4 e troque os valores da 1ª.linha pelos da 4ª.coluna, vice-e-versa. Escrever ao final a matriz obtida
-*/
+ * Troca de Valores entre a 1ª Linha e a 4ª Coluna de uma Matriz 4x4
+ * Este programa lê uma matriz 4x4, troca os valores da primeira linha com os da quarta coluna e vice-versa, e exibe a matriz resultante.
+ * A matriz é preenchida com valores aleatórios e, após a troca, a matriz modificada é apresentada.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - Utiliza a função randomMatrix da biblioteca 'ulissesMatrix.h' para preencher a matriz com valores aleatórios.
+ * - A função changeValues(int row, int col, int m[row][col]) realiza a troca dos valores entre a primeira linha e a quarta coluna.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "ulissesMatrix.h"

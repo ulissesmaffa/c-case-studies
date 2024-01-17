@@ -1,8 +1,10 @@
-/* 
-Faça um programa que leia 3 números inteiros obrigatoriamente 
-com três dígitos e depois utilizando uma função imprima o número lido de forma invertida 
-(os números que foram passados por parâmetro).  Ex: 234 saída: 432
-*/
+/*
+ * Nome do Programa: Programa simples funções
+ * Descrição: 
+ *    Programa simples para lidar com funções
+ * 
+ * Autor: Ulisses Maffazioli
+ */
 
 #include <stdio.h>
 

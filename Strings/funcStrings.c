@@ -1,15 +1,19 @@
 /*
-1)Crie uma função que transforma todos os caracteres de uma string em maiúsculos.
-2)Crie uma função que transforma todos os caracteres de uma string em minúsculos.
-3)Crie uma função que recebe uma string e um caractere, e retorne o número de vezes que esse caractere aparece na string.
-4)Crie uma função que recebe uma string e um caractere, e apague todas as ocorrências desses caracteres na string.
-5)Crie uma função que mostra os caracteres de uma string são repetidos.
-6)Crie uma função que retira todas os caracteres repetidos de uma string.
-7)Crie uma função que recebe uma string e transforma alguns dos caracteres em maiúsculos e outros em minúsculos. 
-Faça sorteios com a função rand() para gerar números aleatórios em C, 
-que serão usados para escolher os índices dos caracteres que serão alterados.
-8)Crie uma função que duplique cada caractere da string.
-*/
+ * Funções de Manipulação de Strings em C
+ * Este programa inclui várias funções para manipular strings, como converter para maiúsculas ou minúsculas,
+ * contar o número de ocorrências de um caractere, apagar todas as ocorrências de um caractere,
+ * identificar caracteres repetidos, excluir caracteres repetidos e duplicar caracteres da string.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - As funções operam diretamente na string passada como parâmetro.
+ * - A função `procurar` retorna o número de ocorrências de um caractere específico na string.
+ * - `apagar` remove todas as ocorrências de um caractere específico.
+ * - `repetidos` e `excluirRepetidos` lidam com caracteres repetidos na string.
+ * - `duplicar` cria uma nova string com cada caractere da string original duplicado.
+ * - O programa demonstra o uso de funções padrão da biblioteca `ctype.h` para manipulação de caracteres.
+ */
 
 #include <stdio.h>
 #include <string.h>

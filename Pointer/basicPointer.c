@@ -1,3 +1,9 @@
+/*
+ * Implementação simples de ponteiro
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 

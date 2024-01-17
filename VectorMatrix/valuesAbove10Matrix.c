@@ -1,6 +1,8 @@
 /*
-Leia uma matriz 6 x 6, conte e escreva quantos valores maiores que 10 ela possui.
-*/
+ * Manipulação de matriz 6x6
+ *
+ * Autor: Ulisses Maffazioli
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

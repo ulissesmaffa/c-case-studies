@@ -1,3 +1,11 @@
+/*
+ * Implementação de Lista Encadeada Simples
+ * Cria e gerencia uma lista encadeada para armazenar números inteiros.
+ * O programa permite adicionar novos elementos à lista e exibir os elementos armazenados.
+ *
+ * Autor: Ulisses Maffazioli
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

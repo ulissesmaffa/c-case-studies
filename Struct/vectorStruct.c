@@ -1,9 +1,15 @@
 /*
-1)Crie um programa que permita armazenar o nome, a altura e da data de nascimento de até 10 pessoas. 
-Cada pessoa deve ser representada por uma struct dentro de um vetor. 
-O nome, a data de nascimento e a altura de cada pessoa devem ser informados pelo teclado.
-Posteriormente imprima os nomes das pessoas que possuem altura superior a 1,78.
-*/
+ * Gerenciamento de Informações de Pessoas
+ * Este programa armazena e exibe informações de até 10 pessoas, incluindo nome, altura e data de nascimento.
+ * Permite inserir dados pelo teclado e imprime os nomes das pessoas com altura superior a 1,78 metros.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - Utiliza uma struct chamada Pessoa para armazenar as informações de cada pessoa.
+ * - As informações são inseridas pelo usuário e armazenadas em um vetor de Pessoa.
+ * - Inclui funções para inserir dados, imprimir todos os dados e imprimir dados com filtro de altura.
+ */
 
 #include<stdio.h>
 #include <stdlib.h>

@@ -1,3 +1,17 @@
+/*
+ * Gerenciamento de Peso e Preço de Bois
+ * Este programa permite a inserção do peso de bois, calcula o preço com base no peso, e identifica o boi mais magro e o mais gordo.
+ * Os dados são armazenados em vetores, e o programa inclui funções para inserir pesos, calcular preços e exibir resultados.
+ *
+ * Autor: Ulisses Maffazioli
+ *
+ * Notas sobre a Implementação:
+ * - A função inserirPeso(float *v) captura os pesos dos bois.
+ * - A função printVector(float *v) imprime os valores dos vetores de peso e preço.
+ * - atualizaPreco(float *peso, float *preco) calcula o preço com base no peso, aplicando diferentes taxas.
+ * - magroGordo(float *peso, int *magro, int *gordo) identifica os índices do boi mais magro e do mais gordo.
+ */
+
 #include <stdio.h>
 #define TAM 3
 
